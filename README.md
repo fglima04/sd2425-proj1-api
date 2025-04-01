@@ -7,3 +7,4 @@ This repository includes the API and a set of files that should be used in proje
 * ```Dockerfile``` : Dockerfile for creating the docker image of the project
 * ```hibernate.cfg.xml``` : auxiliary file for using Hibernate
 * ```pom.xml``` : maven file for creating the project
+

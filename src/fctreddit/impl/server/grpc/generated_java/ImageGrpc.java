@@ -1,4 +1,4 @@
-package fctreddit.impl.grpc.generated_java;
+package fctreddit.impl.server.grpc.generated_java;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -15,29 +15,29 @@ public final class ImageGrpc {
   public static final java.lang.String SERVICE_NAME = "Image";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs,
-      fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult> getCreateImageMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs,
+      fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult> getCreateImageMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "createImage",
-      requestType = fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs,
-      fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult> getCreateImageMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs, fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult> getCreateImageMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs,
+      fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult> getCreateImageMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs, fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult> getCreateImageMethod;
     if ((getCreateImageMethod = ImageGrpc.getCreateImageMethod) == null) {
       synchronized (ImageGrpc.class) {
         if ((getCreateImageMethod = ImageGrpc.getCreateImageMethod) == null) {
           ImageGrpc.getCreateImageMethod = getCreateImageMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs, fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs, fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "createImage"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult.getDefaultInstance()))
               .setSchemaDescriptor(new ImageMethodDescriptorSupplier("createImage"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class ImageGrpc {
     return getCreateImageMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs,
-      fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult> getGetImageMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs,
+      fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult> getGetImageMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getImage",
-      requestType = fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs,
-      fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult> getGetImageMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs, fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult> getGetImageMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs,
+      fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult> getGetImageMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs, fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult> getGetImageMethod;
     if ((getGetImageMethod = ImageGrpc.getGetImageMethod) == null) {
       synchronized (ImageGrpc.class) {
         if ((getGetImageMethod = ImageGrpc.getGetImageMethod) == null) {
           ImageGrpc.getGetImageMethod = getGetImageMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs, fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs, fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getImage"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult.getDefaultInstance()))
               .setSchemaDescriptor(new ImageMethodDescriptorSupplier("getImage"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class ImageGrpc {
     return getGetImageMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs,
-      fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult> getDeleteImageMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs,
+      fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult> getDeleteImageMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "deleteImage",
-      requestType = fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs,
-      fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult> getDeleteImageMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs, fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult> getDeleteImageMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs,
+      fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult> getDeleteImageMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs, fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult> getDeleteImageMethod;
     if ((getDeleteImageMethod = ImageGrpc.getDeleteImageMethod) == null) {
       synchronized (ImageGrpc.class) {
         if ((getDeleteImageMethod = ImageGrpc.getDeleteImageMethod) == null) {
           ImageGrpc.getDeleteImageMethod = getDeleteImageMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs, fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs, fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "deleteImage"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult.getDefaultInstance()))
               .setSchemaDescriptor(new ImageMethodDescriptorSupplier("deleteImage"))
               .build();
         }
@@ -158,22 +158,22 @@ public final class ImageGrpc {
 
     /**
      */
-    default void createImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult> responseObserver) {
+    default void createImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateImageMethod(), responseObserver);
     }
 
     /**
      */
-    default void getImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult> responseObserver) {
+    default void getImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetImageMethod(), responseObserver);
     }
 
     /**
      */
-    default void deleteImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult> responseObserver) {
+    default void deleteImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteImageMethod(), responseObserver);
     }
   }
@@ -207,24 +207,24 @@ public final class ImageGrpc {
 
     /**
      */
-    public void createImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult> responseObserver) {
+    public void createImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateImageMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult> responseObserver) {
+    public void getImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getGetImageMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void deleteImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult> responseObserver) {
+    public void deleteImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteImageMethod(), getCallOptions()), request, responseObserver);
     }
@@ -248,22 +248,22 @@ public final class ImageGrpc {
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult createImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs request) {
+    public fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult createImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateImageMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult> getImage(
-        fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs request) {
+    public java.util.Iterator<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult> getImage(
+        fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getGetImageMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult deleteImage(fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request) {
+    public fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult deleteImage(fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDeleteImageMethod(), getCallOptions(), request);
     }
@@ -287,16 +287,16 @@ public final class ImageGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult> createImage(
-        fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult> createImage(
+        fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateImageMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult> deleteImage(
-        fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult> deleteImage(
+        fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDeleteImageMethod(), getCallOptions()), request);
     }
@@ -324,16 +324,16 @@ public final class ImageGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_IMAGE:
-          serviceImpl.createImage((fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult>) responseObserver);
+          serviceImpl.createImage((fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult>) responseObserver);
           break;
         case METHODID_GET_IMAGE:
-          serviceImpl.getImage((fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult>) responseObserver);
+          serviceImpl.getImage((fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult>) responseObserver);
           break;
         case METHODID_DELETE_IMAGE:
-          serviceImpl.deleteImage((fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult>) responseObserver);
+          serviceImpl.deleteImage((fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -357,22 +357,22 @@ public final class ImageGrpc {
           getCreateImageMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageArgs,
-              fctreddit.impl.grpc.generated_java.ImageProtoBuf.CreateImageResult>(
+              fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageArgs,
+              fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.CreateImageResult>(
                 service, METHODID_CREATE_IMAGE)))
         .addMethod(
           getGetImageMethod(),
           io.grpc.stub.ServerCalls.asyncServerStreamingCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageArgs,
-              fctreddit.impl.grpc.generated_java.ImageProtoBuf.GetImageResult>(
+              fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageArgs,
+              fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.GetImageResult>(
                 service, METHODID_GET_IMAGE)))
         .addMethod(
           getDeleteImageMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageArgs,
-              fctreddit.impl.grpc.generated_java.ImageProtoBuf.DeleteImageResult>(
+              fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageArgs,
+              fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.DeleteImageResult>(
                 service, METHODID_DELETE_IMAGE)))
         .build();
   }
@@ -383,7 +383,7 @@ public final class ImageGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return fctreddit.impl.grpc.generated_java.ImageProtoBuf.getDescriptor();
+      return fctreddit.impl.server.grpc.generated_java.ImageProtoBuf.getDescriptor();
     }
 
     @java.lang.Override

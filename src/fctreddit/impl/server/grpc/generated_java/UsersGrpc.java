@@ -1,4 +1,4 @@
-package fctreddit.impl.grpc.generated_java;
+package fctreddit.impl.server.grpc.generated_java;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -15,29 +15,29 @@ public final class UsersGrpc {
   public static final java.lang.String SERVICE_NAME = "Users";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult> getCreateUserMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult> getCreateUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "createUser",
-      requestType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult> getCreateUserMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult> getCreateUserMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult> getCreateUserMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult> getCreateUserMethod;
     if ((getCreateUserMethod = UsersGrpc.getCreateUserMethod) == null) {
       synchronized (UsersGrpc.class) {
         if ((getCreateUserMethod = UsersGrpc.getCreateUserMethod) == null) {
           UsersGrpc.getCreateUserMethod = getCreateUserMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "createUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult.getDefaultInstance()))
               .setSchemaDescriptor(new UsersMethodDescriptorSupplier("createUser"))
               .build();
         }
@@ -46,29 +46,29 @@ public final class UsersGrpc {
     return getCreateUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult> getGetUserMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult> getGetUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "getUser",
-      requestType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult> getGetUserMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult> getGetUserMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult> getGetUserMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult> getGetUserMethod;
     if ((getGetUserMethod = UsersGrpc.getGetUserMethod) == null) {
       synchronized (UsersGrpc.class) {
         if ((getGetUserMethod = UsersGrpc.getGetUserMethod) == null) {
           UsersGrpc.getGetUserMethod = getGetUserMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "getUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult.getDefaultInstance()))
               .setSchemaDescriptor(new UsersMethodDescriptorSupplier("getUser"))
               .build();
         }
@@ -77,29 +77,29 @@ public final class UsersGrpc {
     return getGetUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult> getUpdateUserMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult> getUpdateUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "updateUser",
-      requestType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult> getUpdateUserMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult> getUpdateUserMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult> getUpdateUserMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult> getUpdateUserMethod;
     if ((getUpdateUserMethod = UsersGrpc.getUpdateUserMethod) == null) {
       synchronized (UsersGrpc.class) {
         if ((getUpdateUserMethod = UsersGrpc.getUpdateUserMethod) == null) {
           UsersGrpc.getUpdateUserMethod = getUpdateUserMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "updateUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult.getDefaultInstance()))
               .setSchemaDescriptor(new UsersMethodDescriptorSupplier("updateUser"))
               .build();
         }
@@ -108,29 +108,29 @@ public final class UsersGrpc {
     return getUpdateUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult> getDeleteUserMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult> getDeleteUserMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "deleteUser",
-      requestType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult> getDeleteUserMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult> getDeleteUserMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult> getDeleteUserMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult> getDeleteUserMethod;
     if ((getDeleteUserMethod = UsersGrpc.getDeleteUserMethod) == null) {
       synchronized (UsersGrpc.class) {
         if ((getDeleteUserMethod = UsersGrpc.getDeleteUserMethod) == null) {
           UsersGrpc.getDeleteUserMethod = getDeleteUserMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "deleteUser"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult.getDefaultInstance()))
               .setSchemaDescriptor(new UsersMethodDescriptorSupplier("deleteUser"))
               .build();
         }
@@ -139,29 +139,29 @@ public final class UsersGrpc {
     return getDeleteUserMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser> getSearchUsersMethod;
+  private static volatile io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser> getSearchUsersMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "searchUsers",
-      requestType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs.class,
-      responseType = fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser.class,
+      requestType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs.class,
+      responseType = fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser.class,
       methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs,
-      fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser> getSearchUsersMethod() {
-    io.grpc.MethodDescriptor<fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser> getSearchUsersMethod;
+  public static io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs,
+      fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser> getSearchUsersMethod() {
+    io.grpc.MethodDescriptor<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser> getSearchUsersMethod;
     if ((getSearchUsersMethod = UsersGrpc.getSearchUsersMethod) == null) {
       synchronized (UsersGrpc.class) {
         if ((getSearchUsersMethod = UsersGrpc.getSearchUsersMethod) == null) {
           UsersGrpc.getSearchUsersMethod = getSearchUsersMethod =
-              io.grpc.MethodDescriptor.<fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs, fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser>newBuilder()
+              io.grpc.MethodDescriptor.<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs, fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "searchUsers"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser.getDefaultInstance()))
+                  fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser.getDefaultInstance()))
               .setSchemaDescriptor(new UsersMethodDescriptorSupplier("searchUsers"))
               .build();
         }
@@ -220,36 +220,36 @@ public final class UsersGrpc {
 
     /**
      */
-    default void createUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult> responseObserver) {
+    default void createUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getCreateUserMethod(), responseObserver);
     }
 
     /**
      */
-    default void getUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult> responseObserver) {
+    default void getUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGetUserMethod(), responseObserver);
     }
 
     /**
      */
-    default void updateUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult> responseObserver) {
+    default void updateUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getUpdateUserMethod(), responseObserver);
     }
 
     /**
      */
-    default void deleteUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult> responseObserver) {
+    default void deleteUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getDeleteUserMethod(), responseObserver);
     }
 
     /**
      */
-    default void searchUsers(fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser> responseObserver) {
+    default void searchUsers(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getSearchUsersMethod(), responseObserver);
     }
   }
@@ -283,40 +283,40 @@ public final class UsersGrpc {
 
     /**
      */
-    public void createUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult> responseObserver) {
+    public void createUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getCreateUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void getUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult> responseObserver) {
+    public void getUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getGetUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void updateUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult> responseObserver) {
+    public void updateUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getUpdateUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void deleteUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult> responseObserver) {
+    public void deleteUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getDeleteUserMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void searchUsers(fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs request,
-        io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser> responseObserver) {
+    public void searchUsers(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs request,
+        io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getSearchUsersMethod(), getCallOptions()), request, responseObserver);
     }
@@ -340,36 +340,36 @@ public final class UsersGrpc {
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult createUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs request) {
+    public fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult createUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getCreateUserMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult getUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs request) {
+    public fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult getUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getGetUserMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult updateUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request) {
+    public fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult updateUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getUpdateUserMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult deleteUser(fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request) {
+    public fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult deleteUser(fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getDeleteUserMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public java.util.Iterator<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser> searchUsers(
-        fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs request) {
+    public java.util.Iterator<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser> searchUsers(
+        fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs request) {
       return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
           getChannel(), getSearchUsersMethod(), getCallOptions(), request);
     }
@@ -393,32 +393,32 @@ public final class UsersGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult> createUser(
-        fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult> createUser(
+        fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getCreateUserMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult> getUser(
-        fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult> getUser(
+        fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getGetUserMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult> updateUser(
-        fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult> updateUser(
+        fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getUpdateUserMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult> deleteUser(
-        fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request) {
+    public com.google.common.util.concurrent.ListenableFuture<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult> deleteUser(
+        fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getDeleteUserMethod(), getCallOptions()), request);
     }
@@ -448,24 +448,24 @@ public final class UsersGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_CREATE_USER:
-          serviceImpl.createUser((fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult>) responseObserver);
+          serviceImpl.createUser((fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult>) responseObserver);
           break;
         case METHODID_GET_USER:
-          serviceImpl.getUser((fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult>) responseObserver);
+          serviceImpl.getUser((fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult>) responseObserver);
           break;
         case METHODID_UPDATE_USER:
-          serviceImpl.updateUser((fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult>) responseObserver);
+          serviceImpl.updateUser((fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult>) responseObserver);
           break;
         case METHODID_DELETE_USER:
-          serviceImpl.deleteUser((fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult>) responseObserver);
+          serviceImpl.deleteUser((fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult>) responseObserver);
           break;
         case METHODID_SEARCH_USERS:
-          serviceImpl.searchUsers((fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs) request,
-              (io.grpc.stub.StreamObserver<fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser>) responseObserver);
+          serviceImpl.searchUsers((fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs) request,
+              (io.grpc.stub.StreamObserver<fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -489,36 +489,36 @@ public final class UsersGrpc {
           getCreateUserMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserArgs,
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.CreateUserResult>(
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserArgs,
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.CreateUserResult>(
                 service, METHODID_CREATE_USER)))
         .addMethod(
           getGetUserMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserArgs,
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.GetUserResult>(
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserArgs,
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GetUserResult>(
                 service, METHODID_GET_USER)))
         .addMethod(
           getUpdateUserMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserArgs,
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.UpdateUserResult>(
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserArgs,
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.UpdateUserResult>(
                 service, METHODID_UPDATE_USER)))
         .addMethod(
           getDeleteUserMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserArgs,
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.DeleteUserResult>(
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserArgs,
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.DeleteUserResult>(
                 service, METHODID_DELETE_USER)))
         .addMethod(
           getSearchUsersMethod(),
           io.grpc.stub.ServerCalls.asyncServerStreamingCall(
             new MethodHandlers<
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.SearchUserArgs,
-              fctreddit.impl.grpc.generated_java.UsersProtoBuf.GrpcUser>(
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.SearchUserArgs,
+              fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser>(
                 service, METHODID_SEARCH_USERS)))
         .build();
   }
@@ -529,7 +529,7 @@ public final class UsersGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return fctreddit.impl.grpc.generated_java.UsersProtoBuf.getDescriptor();
+      return fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.getDescriptor();
     }
 
     @java.lang.Override

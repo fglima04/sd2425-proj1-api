@@ -77,20 +77,59 @@ public class JavaUsers implements Users {
 
 	@Override
 	public Result<User> updateUser(String userId, String password, User user) {
-		// TODO Auto-generated method stub
-		return null;
+		Log.info("updateUser : " + userId);
+
+		if (userId == null || password == null || user == null) {
+			Log.info("UserId, password or user data null.");
+			return Result.error(ErrorCode.BAD_REQUEST);
+		}
+
+		Result<User> cur = getUser(userId, password);
+		if (!cur.isOK())
+			return cur;
+
+		try {
+			hibernate.update(user);
+			return Result.ok(user);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error(ErrorCode.INTERNAL_ERROR);
+		}
 	}
 
 	@Override
 	public Result<User> deleteUser(String userId, String password) {
-		// TODO Auto-generated method stub
-		return null;
+		Log.info("deleteUser : " + userId);
+
+		Result<User> cur = getUser(userId, password);
+		if (!cur.isOK())
+			return cur;
+
+		try {
+			hibernate.delete(cur.value());
+			return Result.ok(cur.value());
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error(ErrorCode.INTERNAL_ERROR);
+		}
 	}
 
 	@Override
 	public Result<List<User>> searchUsers(String pattern) {
-		// TODO Auto-generated method stub
-		return null;
+		Log.info("searchUsers : " + pattern);
+
+		if (pattern == null) {
+			Log.info("Pattern is null.");
+			return Result.error(ErrorCode.BAD_REQUEST);
+		}
+
+		try {
+			List<User> query = hibernate.jpql("FROM User WHERE userId like :pattern", User.class);
+			return Result.ok(query);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return Result.error(ErrorCode.INTERNAL_ERROR);
+		}
 	}
 
 }

@@ -1,4 +1,4 @@
-package fctreddit.impl.server.grpc.util;
+package fctreddit.impl.grpc.util;
 
 import fctreddit.api.User;
 import fctreddit.impl.server.grpc.generated_java.UsersProtoBuf.GrpcUser;

@@ -2,5 +2,9 @@
 .settings/
 .project
 .classpath
+
 /bin/
 .DS_Store
+
+# Generated gRPC code
+**/generated_java/

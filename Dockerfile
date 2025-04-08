@@ -8,3 +8,5 @@ ADD fctreddit.props .
 
 # copy the jar created by assembly to the docker image
 COPY target/*jar-with-dependencies.jar sd2425.jar
+
+CMD ["java", "-cp", "sd2425.jar", "fctreddit.impl.servers.rest.UsersServer"]

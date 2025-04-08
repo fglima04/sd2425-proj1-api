@@ -19,10 +19,9 @@ import fctreddit.api.java.Result;
 import fctreddit.api.java.Result.ErrorCode;
 import fctreddit.api.User;
 import fctreddit.api.rest.RestUsers;
+import fctreddit.impl.clients.java.Users.UsersClient;
 
-import fctreddit.impl.discovery.Discovery;
-
-public class RestUsersClient {
+public class RestUsersClient extends UsersClient {
 	private static Logger Log = Logger.getLogger(RestUsersClient.class.getName());
 
 	protected static final int READ_TIMEOUT = 5000;
@@ -31,9 +30,6 @@ public class RestUsersClient {
 	protected static final int MAX_RETRIES = 10;
 	protected static final int RETRY_SLEEP = 5000;
 
-	private static final String SERVICE_NAME = "UsersService";
-
-	private final Discovery discovery;
 
 	private URI serverURI;
 	final Client client;
@@ -41,10 +37,10 @@ public class RestUsersClient {
 
 	WebTarget target;
 
-	public RestUsersClient(Discovery discovery) {
-		this.discovery = discovery;
+	public RestUsersClient(URI serverURI) {
+		
 
-		this.serverURI = resolveServerURI();
+		this.serverURI = serverURI;
 		this.config = new ClientConfig();
 		config.property(ClientProperties.READ_TIMEOUT, READ_TIMEOUT);
 		config.property(ClientProperties.CONNECT_TIMEOUT, CONNECT_TIMEOUT);
@@ -53,16 +49,7 @@ public class RestUsersClient {
 		this.target = client.target(serverURI).path(RestUsers.PATH);
 	}
 
-	private URI resolveServerURI() {
-		URI[] uris = discovery.knownUrisOf(SERVICE_NAME, 1);
-		if (uris.length == 0) {
-			throw new RuntimeException("No available servers for service: " + SERVICE_NAME);
-		}
-		return uris[0];
-	}
-
 	private void updateTarget() {
-		this.serverURI = resolveServerURI();
 		this.target = client.target(serverURI).path(RestUsers.PATH);
 	}
 

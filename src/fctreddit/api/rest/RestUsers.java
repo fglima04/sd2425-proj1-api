@@ -3,6 +3,7 @@ package fctreddit.api.rest;
 import java.util.List;
 
 import fctreddit.api.User;
+import fctreddit.api.java.Result;
 import jakarta.ws.rs.Consumes;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;

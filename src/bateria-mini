@@ -1,2 +1,3 @@
 Criar um utilizador:
-java -cp sd2425.jar fctreddit.impl.clients.java.Users.CreateUserClient rbMartinez Roberto rb@gmail.com 12345
+java -cp sd2425.jar fctreddit.impl.clients.CreateUserClient rbMartinez Roberto rb@gmail.com 12345
+java -cp sd2425.jar fctreddit.impl.clients.CreateUserClient xanoRonaldo Cristiano cr7@gmail.com 77777

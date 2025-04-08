@@ -1,4 +1,4 @@
-package fctreddit.impl.clients.java.Users;
+package fctreddit.impl.clients;
 
 import java.io.IOException;
 import java.net.URI;
@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 import fctreddit.api.java.Result;
 import fctreddit.api.User;
+import fctreddit.impl.clients.java.Users.UsersClient;
 import fctreddit.impl.clients.rest.RestUsersClient;
 import fctreddit.impl.discovery.Discovery;
 
@@ -30,8 +31,20 @@ public class CreateUserClient {
 		
 		Discovery discovery = new Discovery(Discovery.DISCOVERY_ADDR);
 		discovery.start();
+
+		URI[] uris = discovery.knownUrisOf("UsersService", 1);
+		if (uris.length == 0) {
+			throw new RuntimeException("No available servers for service: UsersService");
+		}
+		URI serverURI = uris[0];
+
+		UsersClient client = null;
 		
-		RestUsersClient client = new RestUsersClient(discovery);
+		if(serverURI.toString().endsWith("rest"))
+			client = new RestUsersClient( serverURI );
+		else
+			//client = new GrpcUsersClient( serverURI );
+			Log.info("gRPC client not implemented yet, using REST client instead.");
 		
 		Result<String> result = client.createUser( usr );
 		if( result.isOK()  )

@@ -33,15 +33,23 @@ public class JavaUsers implements Users {
 			return Result.error(ErrorCode.BAD_REQUEST);
 		}
 
+		// Check if user already exists
 		try {
+			User existingUser = hibernate.get(User.class, user.getUserId());
+			if (existingUser != null) {
+				Log.info("User already exists with userId: " + user.getUserId());
+				return Result.error(ErrorCode.CONFLICT);
+			}
+
+			// If we get here, user doesn't exist, so create it
 			hibernate.persist(user);
+			return Result.ok(user.getUserId());
+			
 		} catch (Exception e) {
-			e.printStackTrace(); //Most likely the exception is due to the user already existing...
-			Log.info("User already exists.");
-			return Result.error(ErrorCode.CONFLICT);
+			e.printStackTrace();
+			Log.severe("Error creating user: " + e.getMessage());
+			return Result.error(ErrorCode.INTERNAL_ERROR);
 		}
-		
-		return Result.ok(user.getUserId());
 	}
 
 	@Override
@@ -90,16 +98,16 @@ public class JavaUsers implements Users {
 		User existingUser = getUser(userId, password).value();
 
 		// Update user fields
-		if (user.getFullName() != null) {
-			existingUser.setFullName(user.getFullName());
-		}
 		if (user.getEmail() != null) {
 			existingUser.setEmail(user.getEmail());
+		}
+		if (user.getFullName() != null) {
+			existingUser.setFullName(user.getFullName());
 		}
 		if (user.getPassword() != null) {
 			existingUser.setPassword(user.getPassword());
 		}
-	
+
 
 		try {
 			 hibernate.update(existingUser); // Updated from merge to update

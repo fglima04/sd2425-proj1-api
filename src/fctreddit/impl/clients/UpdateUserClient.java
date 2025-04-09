@@ -21,9 +21,9 @@ public class UpdateUserClient {
 
         String userId = args[0];
         String oldPwd = args[1];
-        String fullName = args[1];
-        String email = args[2];
-        String password = args[3];
+        String fullName = args[2];
+        String email = args[3];
+        String password = args[4];
 
         User usr = new User(userId, fullName, email, password);
 

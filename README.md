@@ -11,8 +11,12 @@ This repository includes the API and a set of files that should be used in proje
 ------------------------------------------------------
 
 mvn clean compile assembly:single docker:build
+# começar o user server
+docker run -h users --network sdnet -p 8080:8080 sd2425-tp1-api-65428-65466 java -cp sd2425.jar fctreddit.impl.servers.rest.UsersServer
 
-docker run -h serv --network sdnet -p 8080:8080 sd2425-tp1-api-65428-65466
+# começar o content server
+docker run -h content --network sdnet -p 8081:8080 sd2425-tp1-api-65428-65466 java -cp sd2425.jar fctreddit.impl.servers.rest.ContentServer
+
 docker run -it --network sdnet sd2425-tp1-api-65428-65466 /bin/bash
 
 ------------------------------------------------------
